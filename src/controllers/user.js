@@ -91,6 +91,7 @@ const loginUser = async (req, res) => {
         .status(401)
         .send({ message: "Please enter valid credentials" });
     }
+    
     const data = {
       user: {
         id: user.id,

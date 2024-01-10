@@ -35,7 +35,6 @@ const createDriver = async (req, res) => {
 const getAllDrivers = async (req, res) => {
   try {
     const drivers = await Driver.findAll();
-    console.log(drivers)
     return res.json(drivers);
   } catch (err) {
     console.log(err);
